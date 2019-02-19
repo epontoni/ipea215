@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:14px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+  /*------ Box shadow*/
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 5px;
+}
+
+
+header nav a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+header nav a:hover{
+  color: var(--white-color);
+}
+
+header nav ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+hr{
+  opacity: .2;
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main {
+  background-image: url('../images/curve.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  margin-top: 200px;
+  height:200px;
+  padding: 5%;
+}
+
+.main img {
+  max-width: 300px;
+  margin-top: -200px;
+}
+
+/* -------------------------------------------  ABOUT */
+.about dl {
+  
+  padding: 5px 10px 20px 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.about dd {
+  font-size: 0.8em;
+}
+.about h5 {
+  display: inline-block;
+}
+/* -------------------------------------------  CONTACT */
+.contact address {
+  padding: 10px 0px;
+  font-style: normal;
+}
+.contact address h3 {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.contact address a {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: var(--normal);
+  display: inline-block;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+.contact address a:hover {
+  color: var(--green-color);
+}
+.contact address a span {
+  font-weight: bold;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/* -------------------------------------------  PRODUCTOS */
+
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+/* ------------------------------------------- FORMULARIO */
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.main_btn {
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+  margin-top: 10px;
+}
+.main_btn:hover{
+  background-color: #63a426;
+}
+
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+.contact a {
+  color: var(--green-color);
+}
